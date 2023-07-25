@@ -6,3 +6,8 @@
     * https://pythonblog.co.kr/blog/50/
 * 디자인
 * yaml 지원
+* 포스트 게시 창
+    * velog처럼 왼쪽에 코드/오른쪽에 미리보기
+
+
+
