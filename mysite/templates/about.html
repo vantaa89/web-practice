@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load markdown_extras %}
+
+
+{% block content %}
+
+{% for post in post_list %}
+<div class="my-3" >
+    <div class="card-body padding-thick">
+        <h2 class="title">{{post.title}}</h2>
+        <p class="text">{{post.content | markdown | safe}}</p>
+    </div>
+</div>
+{% endfor %}
+
+{% endblock content %}
