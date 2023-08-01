@@ -19,5 +19,7 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
+    path('<int:pk>/', views.single_post_page), # 숫자가 뒤에 오는 경우, views.py의 single_post_page(request, pk)를 호출
     path('', views.index), # views.py에 정의된 index() 함수를 호출
+    
 ]
