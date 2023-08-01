@@ -14,15 +14,10 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from django.contrib import admin
 from django.urls import path
 from . import views
 
 urlpatterns = [
-    
-    
-    path('', views.PostList.as_view()),
-    path('<int:pk>/', views.PostDetail.as_view()),      # FBV: 숫자가 뒤에 오는 경우, views.py의 single_post_page(request, pk)를 호출
-    # path('', views.index),                        # FBV: views.py에 정의된 index() 함수를 호출
-    
+    path('about_me/', views.about_me),
+    path('', views.landing),
 ]
